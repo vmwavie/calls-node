@@ -28,6 +28,11 @@ e2eUrl= // your host url from docker container
 e2eClientNumber= // your number for test. For this you should use verified number from twilio account if your plan is free-tier
 ```
 
+- Run project :
+```sh
+docker-compose up
+```
+
 ## Routes:
 
 - /call (post):
