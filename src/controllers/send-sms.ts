@@ -3,7 +3,7 @@ import {Twilio} from 'twilio';
 import {type SmsInterface} from '../interface/sms';
 
 class SendSmsController {
-	async handle(res: Response, req: Request) {
+	async handle(req: Request, res: Response) {
 		const {clientNumber, messageText} = req.body as SmsInterface;
 
 		if (!clientNumber || !messageText) {

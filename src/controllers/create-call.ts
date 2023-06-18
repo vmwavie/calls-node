@@ -3,7 +3,7 @@ import {Twilio} from 'twilio';
 import {type CallInterface} from '../interface/call';
 
 class CreateCallController {
-	async handle(res: Response, req: Request) {
+	async handle(req: Request, res: Response) {
 		const {clientNumber} = req.body as CallInterface;
 
 		const accountSid = process.env.TWILIO_ACCOUNT_SID;
